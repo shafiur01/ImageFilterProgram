@@ -1,0 +1,259 @@
+defining out CSS variables
+:root {
+    --opacity: 100;
+    --saturation: 100;
+    --brightness: 100;
+    --hue: 0;
+    --gray: 0;
+    --blur: 0;
+    --main-color: #1d0c06;
+    --secondary-color: #EF6C00;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1d0c06;
+    font-family: "Open Sans",Arial, sans-serif;
+    font-size: 1em;      
+}
+main {
+    margin: 30px 30px;
+ 
+}
+
+header {
+     background-color: #F5F5F5;   
+    margin: 5px 30px;
+    
+}
+h1 {
+    font-size: 2em;
+    padding: 5px;
+    color: #5D4037;
+}
+em {
+	font-style: italic;
+}
+
+
+#imgManipulated {
+    margin: 0;
+    float: left;
+}
+
+.sliders { width: 250px; }
+
+#sliderBox label {
+    display: block;
+    width: 250px; 
+    float: left;
+    
+}
+#sliderBox button:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+#sliderBox {
+    margin: 0;
+    border: solid 1px #ccc; 
+    padding: 5px;
+    width: 300px;  
+    float: left;
+    margin-right: 10px;
+    background-color: white;
+
+}
+button {
+    background-color: #EF6C00;
+    color: white;
+    border: 0;
+    padding: 5px 10px;
+}
+
+figcaption {
+    background-color: white;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+
+#thumbBox {
+    float: left;
+    border: solid 1px #ccc; 
+    padding: 15px;    
+    margin-left: 10px;
+    background-color: white;
+}
+#thumbBox img:hover {
+    transform: scale(1.1);
+}
+
+#thumbBox div {
+     margin-top: 5px;
+     margin-bottom: 15px;   
+}
+
+.tiled {
+    background-image:url(../images/stripes.jpg);
+    background-repeat:repeat; 
+}
+
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+temp tester 
+#imgManipulated img {
+   filter: opacity(62%) brightness(50%) contrast(50%);   
+-webkit-filter: opacity(62%) brightness(50%) contrast(50%);  
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+:root {
+    --main-color: #1d0c06;
+    --secondary-color: #EF6C00;
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: var(--main-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 0;
+    color: var(--secondary-color);
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #imgManipulated img {
+    filter: opacity(62%) brightness(50%) contrast(50%);
+    -webkit-filter: opacity(62%) brightness(50%) contrast(50%);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    transition: transform .3s ease-in-out;
+  }
+  
+  #imgManipulated img:hover {
+    transform: scale(1.01);
+  }
+  
+  .sliders {
+    width: 250px;
+  }
+  
+  #sliderBox {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    margin-right: 20px;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  #sliderBox label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #sliderBox input[type="range"] {
+    width: 100%;
+  }
+  
+  #sliderBox button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  #sliderBox button:hover {
+    background-color: darken(var(--secondary-color), 10%);
+  }
+  
+  #thumbBox {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  #thumbBox img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: transform .3s ease-in-out;
+  }
+  
+  #thumbBox img:hover {
+    transform: scale(1.1);
+  }
+   */

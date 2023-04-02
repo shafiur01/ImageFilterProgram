@@ -1,0 +1,69 @@
+<p style="color: azure; font-style: italic;">@copywrite Shafiur Rahman Bhauyan 2022</p>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>  
+    <title>AmazingImageFilter</title>   
+
+    <!-- linking to a googleapis stylesheet which makes the page look very nice -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800" rel="stylesheet">    
+    <link rel="stylesheet" href="css/AmazingImageFilter.css">
+</head>
+<body class="tiled">
+
+<header>
+    <h1>Your Amazing Image Filter Is Here! Try It Now</h1>
+</header>
+
+<!-- setting the level of intensity of different filter I used in the  -->
+<main>
+    <div id="sliderBox">
+        <form>
+           <p><label>Opacity: </label><input type="range" id="sliderOpacity" min="0" max="100" value="100" class="sliders" /> <span id="numOpacity">100</span>%</p>
+           <p><label>Saturation: </label><input type="range" id="sliderSaturation" min="1" max="300" value="100" class="sliders"/> <span id="numSaturation">100</span>%</p>
+           <p><label>Brightness: </label><input type="range" id="sliderBrightness" min="0" max="300" value="100" class="sliders" /> <span id="numBrightness">100</span>%</p>
+           <p><label>Hue Rotate: </label><input type="range" id="sliderHue" min="0" max="360" value="0" class="sliders" /> <span id="numHue">0</span>deg</p>
+           <p><label>Grayscale: </label><input type="range" id="sliderGray" min="0" max="100" value="0" class="sliders"/> <span id="numGray">0</span>%</p>
+           <p><label>Blur: </label><input type="range" id="sliderBlur" min="0" max="100" value="0" class="sliders" /> <span id="numBlur">0</span>px</p>
+           <p><label>Contrast: </label><input type="range" id="sliderContrast" min="0" max="200" value="100" class="sliders" /><span id="numContrast">100</span>%</p>
+           <p><label>Invert: </label><input type="range" id="sliderInvert" min="0" max="100" value="0" class="sliders" /><span id="numInvert">0</span>%</p>
+           <p><label>Sepia: </label><input type="range" id="sliderSepia" min="0" max="100" value="0" class="sliders" /><span id="numSepia">0</span>%</p>
+           <p><button id="resetFilters">Reset</button> </p>
+        </form>    
+    </div>
+
+    <figure id="imgManipulated">
+        <img src="images/medium/image1.jpg" > 
+        <figcaption>
+            <em>Sunset Picture</em> <br>            
+			<span>Clicked by OC Gonzalez</span>
+        </figcaption>
+    </figure> 
+    
+    
+    <div id="thumbBox">
+        <div><img src="images/small/image1.jpg"  alt="Sunset Picture" title="Clicked by OC Gonzalez"/></div>
+        <div><img src="images/small/image2.jpg"  alt="A trum in snow" title="Clicked by Alex Shuper"/></div>
+        <div><img src="images/small/image3.jpg"  alt="Butterfly" title="Clicked by Julia Elliot"/></div>
+        <div><img src="images/small/painting4.jpg"  alt="Girl Arranging Her Hair" title="Mary Cassatt, 1886"/></div>
+        <div><img src="images/small/painting5.jpg"  alt="Self-portrait" title="Vincent van Gogh, 1889"/></div>
+    </div>
+
+    <div class="upload-container">
+        <div class="upload-btn-wrapper">
+          <button class="btn">Upload an Image</button>
+          <input type="file" name="uploadImage" id="uploadImage" accept="image/jpeg,image/png,image/heif">
+        </div>
+    </div>
+
+    <div class="upload-container">
+        <div class="upload-btn-wrapper">
+            <button class="btn" id="downloadBtn" onclick="downloadImage()">Download Image</button>
+        </div>
+    </div>
+
+
+</main>
+<script src="js/AmazingImageFilter.js"></script> 
+</body>
+</html>
