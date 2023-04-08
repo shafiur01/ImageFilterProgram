@@ -38,23 +38,6 @@ html {
      flex-direction: column;
 }
 
-/* This image set can also be used, but I preferred to use the next set of images from cloudinary */
- /* .panel1 {
-     background-image:url(https://source.unsplash.com/8y8DbWwDTz4/1500x1500);
-}
- .panel2 {
-     background-image:url(https://source.unsplash.com/ZQsKyddXezA/1500x1500);
-}
- .panel3 {
-     background-image:url(https://source.unsplash.com/cbHtEWXkIdQ/1500x1500);
-}
- .panel4 {
-     background-image:url(https://res.cloudinary.com/funwebdev/image/upload/v1589661807/travel/21587937686.jpg);
-}
- .panel5 {
-     background-image:url(https://source.unsplash.com/w8TtcStjyWY/1500x1500);
-} */
-
 .panel1 {
      background-image:url(https://res.cloudinary.com/funwebdev/image/upload/v1589661805/travel/15128113051.jpg);
 }
