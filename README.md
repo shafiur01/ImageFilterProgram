@@ -42,6 +42,16 @@ Save Edited Image: Right-click on the image and select "Save image as..." to dow
 Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
+This is an initial image:
+<img width="1262" alt="Filter1" src="https://github.com/shafiur01/ImageFilterProgram/assets/66236598/575a2310-3390-42e7-8891-a14edc60c60d">
+
+This is after the filter has been applied
+<img width="1262" alt="Filter2" src="https://github.com/shafiur01/ImageFilterProgram/assets/66236598/e1ba6b9e-5396-4e17-9a34-1e47b1750b89">
+
+This is the effect on another selected image from that folder where the effect was automatically applied. So the user didn't have to take extra hassle to apply the same filter on this image. And this is this program's unique speciality.
+<img width="1262" alt="Filter3" src="https://github.com/shafiur01/ImageFilterProgram/assets/66236598/a39939e8-126d-4304-9e3f-54dd3c39dcbf">
+
+
 # Fork the Project
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
